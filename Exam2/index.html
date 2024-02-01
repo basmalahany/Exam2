@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="icon"  href="images/logo.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black">
+<!--Nav Bar Start-->
+<div id="sidebar">
+    <div class="toggle-btn" onclick="show()">
+        <img src="images/logo.png">
+        <div class="cursor-pointer">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+        <i class="fa-solid fa-globe cursor-pointer icons"></i>
+        <i class="fa-solid fa-share-nodes cursor-pointer icons"></i>
+    </div>
+    <ul>
+        <li onclick="showSearchInputs(); closeSideNav()" class="py-2 position-relative cursor-pointer text-white mt-5">
+            <a href="search.html">Search</li></a>
+        <li onclick="getCategories(); closeSideNav()" class="py-2 position-relative cursor-pointer text-white ">
+            <a href="categories.html">Categories</li></a>
+        <li onclick="getArea(); closeSideNav()" class="py-2 position-relative cursor-pointer text-white">
+            <a href="area.html">Area</li></a>
+        <li onclick="getIngredients(); closeSideNav()" class="py-2 position-relative cursor-pointer text-white">
+            <a href="Ingredients.html"> Ingredients</li></a>
+        <li onclick="showContacts(); closeSideNav()" class="py-2 position-relative cursor-pointer text-white">
+            <a href="contactus.html">Contact Us</li></a>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-globe"></i>
+        <p>Copyright Â© 2019 All Rights
+        Reserved.</p>
+        
+    </ul>
+    
+</div>
+   
+
+
+
+
+
+<!--Nav Bar end-->
+
+<div class="container w-75" id="searchContainer">
+
+</div>
+
+
+        
+
+
+<!--Main Start-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 ">
+                <div class="img1 imgs">
+                    <a href="img1.html">
+                    <img class="w-100 rounded-3" alt="img.html" src="images/1525876468.jpg">
+                    <div class="text text-start ps-2">
+                        <h2>Wontons</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class="img1 imgs ">
+                    <a href="img2.html">
+                    <img class="w-100 rounded-3" alt="img.html" src="images/1bsv1q1560459826.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Kafteji</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class="img1 imgs ">
+                    <a href="img3.html">
+                    <img class="w-100 rounded-3" alt="img.html" src="images/4er7mj1598733193.jpg">
+                    <div class="text text-start ps-2">
+                        <h2>Koshari</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" img1 imgs ">
+                    <a href="img4.html">
+                    <img class="w-100 rounded-3" alt="img.html" src="images/4pqimk1683207418.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Bistek</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" imgs pt-4">
+                    <a href="img5.html">
+                    <img class="w-100 rounded-3" alt="img.html" src="images/58oia61564916529.jpg">
+                    <div class="text text-start ps-2">
+                        <h2>Corba</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" imgs pt-4">
+                    <a href="img6.html">
+                    <img class="w-100 rounded-3" alt="img.html" src="images/ctg8jd1585563097.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Moussaka</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" imgs pt-4">
+                    <a href="img7.html">
+                    <img class="w-100 rounded-3" alt="img.html" src="images/g046bb1663960946.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Sushi</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" imgs pt-4">
+                    <a href="img8.html">
+                    <img class="w-100 rounded-3" alt="img.html" src="images/g373701551450225.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Shakshuka</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" imgs pt-4">
+                    <a href="img9.html">
+                    <img class="w-100 rounded-3" alt="img.html" src="images/hyarod1565090529.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Stamppot</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" imgs pt-4">
+                    <a href="img10.html">
+                    <img class="w-100 rounded-3" alt="img.html" src="images/kcv6hj1598733479.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Shawarma</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" imgs pt-4 ">
+                    <a href="img11.html">
+                    <img class="w-100 rounded-3" alt="img.html" src="images/mlchx21564916997.jpg">
+                    <div class="text text-start ps-2 pt-5">
+                        <h2>Kumpir</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" imgs pt-4">
+                    <a href="img12.html">
+                    <img class="w-100 rounded-3" alt="img.html" src="images/n3xxd91598732796.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Tamiya</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" imgs pt-4">
+                    <a href="img13.html">
+                    <img class="w-100 rounded-3" alt="img.html" src="images/rwuyqx1511383174.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Pancakes</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" imgs pt-4">
+                    <a href="img14.html">
+                    <img class="w-100 rounded-3" alt="img.html" src="images/sxysrt1468240488.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Kapsalon</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" imgs pt-4">
+                    <a href="img15.html">
+                    <img class="w-100 rounded-3" alt="img.html" src="images/tkxquw1628771028.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Burek</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" imgs pt-4">
+                    <a href="img16.html">
+                    <img class="w-100 rounded-3" alt="img.html" src="images/txsupu1511815755.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Timbits</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" imgs pt-4">
+                    <a href="img17.html">
+                    <img class="w-100 rounded-3" alt="img.html" src="images/urzj1d1587670726.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Big Mac</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" imgs pt-4">
+                    <a href="img18.html">
+                    <img class="w-100 rounded-3" alt="" src="images/utxqpt1511639216.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Kedgeree </h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" imgs pt-4">
+                    <a href="img19.html">
+                    <img class="w-100 rounded-3" alt="" src="images/uuyrrx1487327597.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Poutine </h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" imgs pt-4">
+                    <a href="img20.html">
+                    <img class="w-100 rounded-3" alt="" src="images/wssvvs1511785879.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Flamiche</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" imgs pt-4">
+                    <a href="img21.html">
+                    <img class="w-100 rounded-3" alt="" src="images/wtsvxx1511296896.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Lasagne</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" imgs pt-4">
+                    <a href="img22.html">
+                    <img class="w-100 rounded-3" alt="" src="images/wuxrtu1483564410.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Dal fry</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" imgs pt-4">
+                    <a href="img23.html">
+                    <img class="w-100 rounded-3" alt="" src="images/xrrwpx1487347049.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Ribollita</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class=" imgs pt-4">
+                    <a href="img24.html">
+                    <img class="w-100 rounded-3" alt="" src="images/yrstur1511816601.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Sugar Pie</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class="img15 imgs pt-4 ">
+                    <a href="img25.html">
+                    <img class="w-100 rounded-3" alt="" src="images/ysxwuq1487323065.jpg">
+                    <div class="text text-start ps-2 ">
+                        <h2>Fish pie</h2>
+                    </div>
+    
+                </div>
+            </a>
+            </div>
+
+
+       
+    </div>                   
+    </div>
+<!--Main End-->
+
+  
+    
+
+
+
+
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/style.js"></script>
+
+</body>
+</html>

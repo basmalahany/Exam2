@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="icon"  href="images/logo.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black">
+<!--Nav Bar Start-->
+<div id="sidebar">
+    <div class="toggle-btn" onclick="show()">
+        <img src="images/logo.png">
+        <div class="cursor-pointer">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+        <i class="fa-solid fa-globe cursor-pointer icons"></i>
+        <i class="fa-solid fa-share-nodes cursor-pointer icons"></i>
+    </div>
+    <ul>
+        <li onclick="showSearchInputs(); closeSideNav()" class="py-2 position-relative cursor-pointer text-white mt-5">
+            <a href="search.html">Search</li></a>
+        <li onclick="getCategories(); closeSideNav()" class="py-2 position-relative cursor-pointer text-white ">
+            <a href="categories.html">Categories</li></a>
+        <li onclick="getArea(); closeSideNav()" class="py-2 position-relative cursor-pointer text-white">
+            <a href="area.html">Area</li></a>
+        <li onclick="getIngredients(); closeSideNav()" class="py-2 position-relative cursor-pointer text-white">
+            <a href="Ingredients.html"> Ingredients</li></a>
+        <li onclick="showContacts(); closeSideNav()" class="py-2 position-relative cursor-pointer text-white">
+            <a href="contactus.html">Contact Us</li></a>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-globe"></i>
+        <p>Copyright Â© 2019 All Rights
+        Reserved.</p>
+        
+    </ul>
+    
+</div>
+
+
+
+<!--Nav Bar end-->
+
+
+<div class="container w-75" id="searchContainer">
+    <div class="row py-3 ">
+        <div class="col-md-6 ">
+            <input onkeyup="searchByName(this.value)" class="form-control bg-white text-black"  placeholder="Search By Name">
+        </div>
+        <div class="col-md-6">
+            <input onkeyup="searchByFLetter(this.value)" maxlength="1" class="form-control bg-white text-black" type="text" placeholder="Search By First Letter">
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/style.js"></script>
+</body>
+</html>

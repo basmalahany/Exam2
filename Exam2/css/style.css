@@ -1,0 +1,211 @@
+.cursor-pointer{
+    cursor: pointer;
+}
+body{
+    background-color: black;
+}
+/*Nav Bar Start*/
+#sidebar{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: black;
+    z-index: 1000;
+   left: -300px;
+   transition: .4s;
+}
+#sidebar img{
+    width: 70%;
+   margin-left: 10px;
+   margin-top: 20px;
+ 
+}
+
+#sidebar.active{
+    left: 0;
+}
+#sidebar ul li{
+    list-style: none;
+    margin-left: 30px;
+    padding: 10px 20px;
+}
+#sidebar ul li a {
+    text-decoration: none;
+    color: white;
+}
+#sidebar ul p{
+    margin: 45px;
+    transform: translateY(100px);
+    color: white;
+}
+#sidebar .icons{
+        display: block;
+       transform: translateY(380px);
+       padding-left: 30px;
+       padding-bottom: 5px;   
+}
+#sidebar ul i{
+ margin-left: 47px;
+transform: translateY(140px);
+color: white;
+cursor: pointer;
+}
+
+#sidebar .toggle-btn{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    background-color: white;
+    z-index: 200;
+}
+.toggle-btn span{
+width: 28px;
+border-radius: 10px;
+height: 4px;
+display: block;
+margin-top: 4px;
+margin-left: 20px;
+transform: translateY(198px);
+background-color: black;
+}
+
+/* Nav Bar End*/
+
+.imgs{
+    position: relative;
+    overflow: hidden;
+}
+.img1{
+    padding-top: 50px;
+}
+.img1 .text{
+    position: absolute;
+    top: 49px;
+}
+.text{
+    position: absolute;
+    top:24px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5%;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.601);
+    opacity: 0;
+    transition: 0.7s;
+    transform: translateY(100%);
+    padding-top: 100px;
+}
+.imgs:hover img{
+    transform: scale(1);
+}
+.imgs:hover .text{
+    opacity: 1;
+    transform: rotate(360deg);
+}
+
+ .text h2{
+    color: black;
+    font-size: 25px;
+   
+ }
+
+ /*Category Start*/
+ .categoryimages{
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.img1{
+    padding-top: 50px;
+}
+.img1 .text{
+    position: absolute;
+    top: 49px;
+}
+.categorytext{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5%;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.601);
+    opacity: 0;
+    transition: 0.7s;
+    transform: translateY(100%);
+padding-top: 5px;
+}
+.categoryimages:hover img{
+    transform: scale(1);
+}
+.categoryimages:hover .categorytext{
+    opacity: 1;
+    transform: rotate(360deg);
+}
+
+ .categorytext h2{
+    color: black;
+    font-size: 25px;
+    text-align: center;
+   }
+
+   .categorytext p{
+    color: black;
+    padding: 3px;
+
+   }
+   /*category end*/
+/*ingredients start*/
+.ingmain{
+    position: relative;
+   
+    margin-top: 25px;
+}
+
+.ingmain i{
+    font-size: 60px;
+}
+.ingmain a{
+    text-decoration: none;
+    color: white;
+}
+.ingtext p{
+    width: 100%;
+}
+.ingtext h3{
+    font-size: 26px;
+}
+/*ingredients end*/
+/*Area Start*/
+.areamain{
+    position: relative;
+    margin-top: 25px;
+}
+
+.areamain i{
+    font-size: 60px;
+}
+.areamain a{
+    text-decoration: none;
+    color: white;
+}
+.areatext h3{
+    font-size: 28px;
+}
+/*Area end*/
+
+
+.submit-btn{
+    transform: translateX(450px);
+}
+
+
+
+
+

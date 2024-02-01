@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="icon"  href="images/logo.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black">
+<!--Nav Bar Start-->
+<div id="sidebar">
+    <div class="toggle-btn" onclick="show()">
+        <img src="images/logo.png">
+        <div class="cursor-pointer">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+        <i class="fa-solid fa-globe cursor-pointer icons"></i>
+        <i class="fa-solid fa-share-nodes cursor-pointer icons"></i>
+    </div>
+    <ul>
+        <li onclick="showSearchInputs(); closeSideNav()" class="py-2 position-relative cursor-pointer text-white mt-5">
+            <a href="search.html">Search</li></a>
+        <li onclick="getCategories(); closeSideNav()" class="py-2 position-relative cursor-pointer text-white ">
+            <a href="categories.html">Categories</li></a>
+        <li onclick="getArea(); closeSideNav()" class="py-2 position-relative cursor-pointer text-white">
+            <a href="area.html">Area</li></a>
+        <li onclick="getIngredients(); closeSideNav()" class="py-2 position-relative cursor-pointer text-white">
+            <a href="Ingredients.html"> Ingredients</li></a>
+        <li onclick="showContacts(); closeSideNav()" class="py-2 position-relative cursor-pointer text-white">
+            <a href="contactus.html">Contact Us</li></a>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-globe"></i>
+        <p>Copyright Â© 2019 All Rights
+        Reserved.</p>
+        
+    </ul>
+    
+</div>
+   
+
+
+
+
+
+<!--Nav Bar end-->
+<!--Contact Us Main start-->
+
+<div class="container ">
+    <div class="row">
+        
+  <form id="form" class="row" action="/">
+    <div class="col-md-6 ">
+    <div class="input-control ">
+        <input class="bg-white text-black w-75 rounded p-2 m-2" id="username" name="username" type="text" placeholder="Enter Your Name" >
+        <div class="error bg-danger text-white w-75 m-2 text-center" ></div>
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="input-control">
+        <input class="w-75 rounded p-2 m-2" id="email" name="email" type="text" placeholder="Enter Your Email">
+        <div class="error bg-danger text-white w-75 m-2 text-center"></div>
+    </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="input-control">
+            <input class="w-75 rounded p-2 m-2" id="phone" name="phone" type="number" placeholder="Enter Your Phone">
+            <div class="error bg-danger text-white w-75 m-2 text-center"></div>
+        </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="input-control">
+                <input class="w-75 rounded p-2 m-2" id="age" name="age" type="number" placeholder="Enter Your Age">
+                <div class="error bg-danger text-white w-75 m-2 text-center"></div>
+            </div>
+            </div>
+    <div class="col-md-6">
+    <div class="input-control">
+        <input class="w-75 rounded p-2 m-2" id="password" name="password" type="text" placeholder="Enter Your Password">
+        <div class="error bg-danger text-white w-75 m-2 text-center"></div>
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div class="input-control">
+        <input class="w-75 rounded p-2 m-2" id="password2" name="repassword" type="text" placeholder="Repassword" >
+        <div class="error bg-danger text-white w-75 m-2 text-center"></div>
+    </div>
+    </div>
+    <div class="col-md-6">
+    <button type="submit"  class=" submit-btn p-2 rounded-3  bg-black text-danger border-danger mt-2 ms-2 " >Submit</button>
+    </div>
+
+  </form>
+        </div>
+    </div>
+ 
+<!--Contact Us Main end-->
+
+
+   
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/style.js"></script>
+</body>
+</html>
